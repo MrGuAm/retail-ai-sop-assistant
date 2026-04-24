@@ -1,0 +1,88 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F4EDE1"/>
+  <rect x="56" y="56" width="1488" height="788" rx="40" fill="#FFF9EF" stroke="#E8DCC8" stroke-width="2"/>
+  <circle cx="145" cy="145" r="12" fill="#C2552D"/>
+  <circle cx="181" cy="145" r="12" fill="#C6942F"/>
+  <circle cx="217" cy="145" r="12" fill="#1F6E66"/>
+
+  <rect x="108" y="208" width="760" height="300" rx="28" fill="#FFF5EA" stroke="#F0DCCB" stroke-width="2"/>
+  <rect x="924" y="208" width="568" height="300" rx="28" fill="#F7FBFA" stroke="#D7ECE8" stroke-width="2"/>
+  <rect x="108" y="548" width="434" height="210" rx="24" fill="#FFFFFF" stroke="#E8DCC8" stroke-width="2"/>
+  <rect x="583" y="548" width="434" height="210" rx="24" fill="#FFFFFF" stroke="#E8DCC8" stroke-width="2"/>
+  <rect x="1058" y="548" width="434" height="210" rx="24" fill="#FFFFFF" stroke="#E8DCC8" stroke-width="2"/>
+
+  <text x="108" y="150" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="6">
+    RETAIL OPERATIONS AI KNOWLEDGE BASE
+  </text>
+
+  <text x="108" y="280" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="700">
+    retail-ai-sop-assistant
+  </text>
+  <text x="108" y="345" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="30">
+    ERP SOP assistant demo for onboarding, inventory checks, transfers, and sales reconciliation.
+  </text>
+
+  <text x="108" y="420" fill="#1F2730" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700">
+    Includes
+  </text>
+  <text x="108" y="465" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="28">
+    5 SOP docs   ·   20 FAQ items   ·   Fixed answer template   ·   Static demo page
+  </text>
+
+  <text x="964" y="266" fill="#1F6E66" font-family="Avenir Next, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">
+    OUTPUT FORMAT
+  </text>
+
+  <rect x="964" y="300" width="488" height="54" rx="16" fill="#FFFFFF"/>
+  <rect x="964" y="372" width="488" height="54" rx="16" fill="#FFFFFF"/>
+  <rect x="964" y="444" width="488" height="54" rx="16" fill="#FFFFFF"/>
+
+  <text x="995" y="336" fill="#1F2730" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700">
+    Problem Judgement
+  </text>
+  <text x="995" y="408" fill="#1F2730" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700">
+    Handling Steps
+  </text>
+  <text x="995" y="480" fill="#1F2730" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700">
+    Risk Reminder and Next Action
+  </text>
+
+  <text x="140" y="610" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">
+    SOP LIBRARY
+  </text>
+  <text x="140" y="654" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="44" font-weight="700">
+    Structured retail workflows
+  </text>
+  <text x="140" y="706" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="25">
+    Product data, inventory checks,
+  </text>
+  <text x="140" y="742" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="25">
+    transfers, and sales reconciliation.
+  </text>
+
+  <text x="615" y="610" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">
+    KNOWLEDGE BOT
+  </text>
+  <text x="615" y="654" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="44" font-weight="700">
+    Ready for Dify or Coze
+  </text>
+  <text x="615" y="706" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="25">
+    Prompt template, fallback rules,
+  </text>
+  <text x="615" y="742" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="25">
+    and test cases already included.
+  </text>
+
+  <text x="1090" y="610" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">
+    PORTFOLIO READY
+  </text>
+  <text x="1090" y="654" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="44" font-weight="700">
+    Built for showcase
+  </text>
+  <text x="1090" y="706" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="25">
+    Static demo page, docs, and
+  </text>
+  <text x="1090" y="742" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="25">
+    reusable interview talking points.
+  </text>
+</svg>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>零售业务 AI 知识库 / ERP 操作 SOP 助手</title>
+    <meta
+      name="description"
+      content="一个面向零售公司新人和商品助理的 AI 知识库演示项目，聚焦 ERP 操作 SOP、库存异常排查和调拨处理。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Retail Operations Knowledge Demo</p>
+          <h1>零售业务 AI 知识库 / ERP 操作 SOP 助手</h1>
+          <p class="hero-text">
+            这是一个模拟企业内部使用场景的 AI 助手项目。它把商品资料维护、库存异常排查、调拨处理、销售数据核对等流程整理成结构化 SOP，并以统一格式输出处理建议，帮助新人更快上手 ERP 操作。
+          </p>
+          <div class="hero-actions">
+            <a class="action-primary" href="./README.md">查看项目说明</a>
+            <a class="action-secondary" href="./06_新员工常见问题FAQ.md">查看 FAQ</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="metric-card">
+            <span class="metric-value">5</span>
+            <span class="metric-label">核心 SOP 文档</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">20</span>
+            <span class="metric-label">常见业务问题</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">5</span>
+            <span class="metric-label">固定回答模块</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">0</span>
+            <span class="metric-label">公司敏感信息</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-card section-grid">
+          <div>
+            <p class="section-tag">项目价值</p>
+            <h2>把“口头经验”整理成新人能直接执行的 SOP</h2>
+            <p class="section-text">
+              项目并不追求复杂的模型能力，而是强调业务知识整理、风险提醒和回答一致性。适合用 Dify、Coze 或其他知识库平台快速搭建一个可演示、可写进简历的业务 AI 助手。
+            </p>
+          </div>
+
+          <div class="capability-list">
+            <article class="capability-item">
+              <h3>适合谁用</h3>
+              <p>零售公司新人、商品助理、门店运营支持、基础数据维护人员。</p>
+            </article>
+            <article class="capability-item">
+              <h3>解决什么问题</h3>
+              <p>不知道先查什么、不知道怎么排查、不知道哪些操作有风险。</p>
+            </article>
+            <article class="capability-item">
+              <h3>回答风格</h3>
+              <p>固定输出问题判断、处理步骤、确认信息、风险提醒、后续动作。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="demo-layout">
+          <aside class="navigator-card">
+            <div class="card-header">
+              <p class="section-tag">知识库范围</p>
+              <h2>已整理文档</h2>
+            </div>
+            <div class="doc-list">
+              <a class="doc-item" href="./01_商品资料维护SOP.md">01 商品资料维护 SOP</a>
+              <a class="doc-item" href="./02_库存异常排查SOP.md">02 库存异常排查 SOP</a>
+              <a class="doc-item" href="./03_调拨单处理SOP.md">03 调拨单处理 SOP</a>
+              <a class="doc-item" href="./04_销售数据核对SOP.md">04 销售数据核对 SOP</a>
+              <a class="doc-item" href="./05_ERP操作风险清单.md">05 ERP 操作风险清单</a>
+              <a class="doc-item" href="./06_新员工常见问题FAQ.md">06 新员工常见问题 FAQ</a>
+            </div>
+
+            <div class="sample-block">
+              <p class="section-tag">示例问题</p>
+              <div id="question-chips" class="chip-group"></div>
+            </div>
+          </aside>
+
+          <section class="chat-card">
+            <div class="card-header">
+              <p class="section-tag">回答演示</p>
+              <h2>固定输出模板</h2>
+            </div>
+
+            <div class="chat-query">
+              <span class="query-label">用户提问</span>
+              <p id="selected-question"></p>
+            </div>
+
+            <div class="module-grid">
+              <article class="module-card">
+                <h3>问题判断</h3>
+                <div id="module-judgement"></div>
+              </article>
+              <article class="module-card">
+                <h3>处理步骤</h3>
+                <div id="module-steps"></div>
+              </article>
+              <article class="module-card">
+                <h3>需要确认的信息</h3>
+                <div id="module-confirm"></div>
+              </article>
+              <article class="module-card">
+                <h3>风险提醒</h3>
+                <div id="module-risks"></div>
+              </article>
+              <article class="module-card module-card-wide">
+                <h3>建议后续动作</h3>
+                <div id="module-next"></div>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="section-card roadmap">
+          <div class="card-header">
+            <p class="section-tag">落地方式</p>
+            <h2>用 Dify / Coze 搭建时的最小闭环</h2>
+          </div>
+
+          <div class="roadmap-grid">
+            <article class="roadmap-step">
+              <span>01</span>
+              <h3>上传文档</h3>
+              <p>把 5 篇 SOP 和 1 份 FAQ 导入知识库，按标题或段落切分。</p>
+            </article>
+            <article class="roadmap-step">
+              <span>02</span>
+              <h3>固定提示词</h3>
+              <p>强制输出 5 个模块，保证新人提问时答复结构一致。</p>
+            </article>
+            <article class="roadmap-step">
+              <span>03</span>
+              <h3>测试问题集</h3>
+              <p>优先测试调拨、库存、价格、报表这几类高风险问题。</p>
+            </article>
+            <article class="roadmap-step">
+              <span>04</span>
+              <h3>展示成果</h3>
+              <p>用这个静态页、知识库截图和 FAQ 命中结果组成作品集演示。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
