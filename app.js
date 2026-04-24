@@ -1,8 +1,9 @@
 const answers = [
   {
     id: "allocation",
-    label: "调拨单数据不一致",
-    question: "调拨单数据不一致怎么办？",
+    label: "调拨到货数量异常",
+    question: "调拨单数量和实际到货数量不一致怎么办？",
+    sources: ["03_调拨单处理SOP", "06_新员工常见问题FAQ"],
     judgement:
       "这类问题通常属于调拨单据流未闭环，或者调出、调入双方在商品编码、数量、单位、单据状态上存在不一致。",
     steps: [
@@ -30,8 +31,9 @@ const answers = [
   },
   {
     id: "inventory",
-    label: "门店库存异常",
-    question: "门店库存异常要先查哪些信息？",
+    label: "门店库存不准排查",
+    question: "门店库存不准怎么排查？",
+    sources: ["02_库存异常排查SOP", "06_新员工常见问题FAQ"],
     judgement:
       "门店库存异常通常要先区分是账实不符、单据未做完，还是系统同步延迟，不能一开始就把问题归到盘点差异。",
     steps: [
@@ -61,6 +63,7 @@ const answers = [
     id: "master-data",
     label: "商品资料维护",
     question: "商品资料维护前要检查什么？",
+    sources: ["01_商品资料维护SOP", "06_新员工常见问题FAQ"],
     judgement:
       "重点是先防止重复建档，再确认主数据关键字段是否完整且彼此一致，避免后续影响采购、销售和库存口径。",
     steps: [
@@ -90,6 +93,7 @@ const answers = [
     id: "sales",
     label: "销售库存对账",
     question: "销售数据和库存数据对不上怎么排查？",
+    sources: ["04_销售数据核对SOP", "06_新员工常见问题FAQ"],
     judgement:
       "这类问题大多不是单纯报表异常，而是数据口径、接口同步、退货回库或条码识别逻辑中的某一个环节出了偏差。",
     steps: [
@@ -119,6 +123,7 @@ const answers = [
     id: "newbie",
     label: "新人操作注意事项",
     question: "新员工做 ERP 操作时有哪些注意事项？",
+    sources: ["05_ERP操作风险清单", "06_新员工常见问题FAQ"],
     judgement:
       "新员工最常见的问题不是不会点按钮，而是不清楚业务背景、口径和风险控制点，所以要先建立正确的操作顺序和留痕意识。",
     steps: [
@@ -149,6 +154,8 @@ const answers = [
 const elements = {
   chipGroup: document.getElementById("question-chips"),
   selectedQuestion: document.getElementById("selected-question"),
+  answerSources: document.getElementById("answer-sources"),
+  answerTranscript: document.getElementById("answer-transcript"),
   judgement: document.getElementById("module-judgement"),
   steps: document.getElementById("module-steps"),
   confirm: document.getElementById("module-confirm"),
@@ -164,10 +171,36 @@ function renderList(items) {
   return `<ul>${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
 }
 
-function setActiveAnswer(id) {
+function renderSourcePills(items = []) {
+  return items
+    .map((item) => `<span class="source-pill">${item}</span>`)
+    .join("");
+}
+
+function renderTranscript(answer) {
+  const sections = [
+    { title: "问题判断", content: renderParagraph(answer.judgement) },
+    { title: "处理步骤", content: renderList(answer.steps) },
+    { title: "需要确认的信息", content: renderList(answer.confirm) },
+    { title: "风险提醒", content: renderList(answer.risks) },
+    { title: "建议后续动作", content: renderList(answer.next) }
+  ];
+
+  return sections
+    .map(
+      (section) =>
+        `<section class="transcript-block"><h4>${section.title}</h4>${section.content}</section>`
+    )
+    .join("");
+}
+
+function setActiveAnswer(id, options = {}) {
   const answer = answers.find((item) => item.id === id) || answers[0];
+  const { updateHash = true } = options;
 
   elements.selectedQuestion.textContent = answer.question;
+  elements.answerSources.innerHTML = renderSourcePills(answer.sources);
+  elements.answerTranscript.innerHTML = renderTranscript(answer);
   elements.judgement.innerHTML = renderParagraph(answer.judgement);
   elements.steps.innerHTML = renderList(answer.steps);
   elements.confirm.innerHTML = renderList(answer.confirm);
@@ -177,6 +210,10 @@ function setActiveAnswer(id) {
   document.querySelectorAll(".chip-button").forEach((button) => {
     button.classList.toggle("is-active", button.dataset.id === answer.id);
   });
+
+  if (updateHash) {
+    window.history.replaceState(null, "", `#${answer.id}`);
+  }
 }
 
 function renderChips() {
@@ -191,5 +228,12 @@ function renderChips() {
   });
 }
 
+const params = new URLSearchParams(window.location.search);
+const initialId = window.location.hash.replace("#", "");
+
+if (params.get("view") === "qa") {
+  document.body.classList.add("page-mode-qa");
+}
+
 renderChips();
-setActiveAnswer(answers[0].id);
+setActiveAnswer(initialId || answers[0].id, { updateHash: false });
