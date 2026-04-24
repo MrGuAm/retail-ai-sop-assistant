@@ -71,6 +71,9 @@ retail-ai-sop-assistant
 ├── styles.css
 ├── app.js
 ├── assets
+│   ├── demo-homepage.png
+│   ├── favicon.svg
+│   ├── social-card.png
 │   └── project-cover.svg
 ├── docs
 │   ├── 01_商品资料维护SOP.md
@@ -94,6 +97,8 @@ retail-ai-sop-assistant
   一个更轻量、可直接复制到系统提示词里的版本。
 - `index.html`
   一个无需后端的静态演示页，适合做 GitHub Pages 在线展示。
+- `assets/`
+  包含 README 封面、页面截图、favicon 和分享图等展示资源。
 - `08_知识库测试问题集.md`
   上线前验收和录屏演示时可以直接拿来问。
 - `09_项目演示讲解稿.md`

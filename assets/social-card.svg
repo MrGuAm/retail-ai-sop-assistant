@@ -1,0 +1,62 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F4EDE1"/>
+  <rect x="44" y="44" width="1512" height="812" rx="38" fill="#FFF9EF" stroke="#E8DCC8" stroke-width="2"/>
+
+  <text x="112" y="146" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="6">
+    RETAIL OPERATIONS AI KNOWLEDGE BASE
+  </text>
+
+  <text x="112" y="270" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700">
+    零售业务 AI 知识库 /
+  </text>
+  <text x="112" y="354" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700">
+    ERP 操作 SOP 助手
+  </text>
+
+  <text x="112" y="434" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="30">
+    一个面向零售商品管理场景的 AI 知识库问答助手示例项目。
+  </text>
+  <text x="112" y="478" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="30">
+    覆盖商品资料维护、库存异常排查、调拨处理和销售数据核对。
+  </text>
+
+  <rect x="112" y="554" width="630" height="170" rx="28" fill="#FFF5EA" stroke="#F0DCCB" stroke-width="2"/>
+  <text x="154" y="610" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">
+    OUTPUT FORMAT
+  </text>
+  <text x="154" y="665" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="40" font-weight="700">
+    问题判断 · 处理步骤
+  </text>
+  <text x="154" y="714" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="28">
+    需要确认的信息 · 风险提醒 · 建议后续动作
+  </text>
+
+  <rect x="822" y="148" width="634" height="576" rx="30" fill="#F7FBFA" stroke="#D7ECE8" stroke-width="2"/>
+
+  <rect x="876" y="208" width="250" height="190" rx="24" fill="#FFFFFF"/>
+  <rect x="1152" y="208" width="250" height="190" rx="24" fill="#FFFFFF"/>
+  <rect x="876" y="430" width="526" height="240" rx="24" fill="#FFFFFF"/>
+
+  <text x="910" y="286" fill="#1F6E66" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700">6</text>
+  <text x="910" y="342" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="28">Knowledge Docs</text>
+
+  <text x="1188" y="286" fill="#1F6E66" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700">20</text>
+  <text x="1188" y="342" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="28">FAQ Items</text>
+
+  <text x="910" y="510" fill="#C2552D" font-family="Avenir Next, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">
+    READY FOR
+  </text>
+  <text x="910" y="570" fill="#1F2730" font-family="Georgia, Times New Roman, serif" font-size="44" font-weight="700">
+    Dify / Coze
+  </text>
+  <text x="910" y="620" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="26">
+    Prompt, docs, test set,
+  </text>
+  <text x="910" y="654" fill="#5C6673" font-family="Avenir Next, Arial, sans-serif" font-size="26">
+    GitHub Pages and demo page included.
+  </text>
+
+  <rect x="112" y="778" width="298" height="24" rx="12" fill="#C2552D"/>
+  <rect x="430" y="778" width="164" height="24" rx="12" fill="#C6942F"/>
+  <rect x="614" y="778" width="128" height="24" rx="12" fill="#1F6E66"/>
+</svg>
