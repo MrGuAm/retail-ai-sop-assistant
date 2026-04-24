@@ -1,10 +1,29 @@
 # retail-ai-sop-assistant
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-1F6E66?style=flat-square)](https://mrguam.github.io/retail-ai-sop-assistant/)
+[![SOP Docs](https://img.shields.io/badge/SOP_Docs-6-C2552D?style=flat-square)](./docs)
+[![FAQ](https://img.shields.io/badge/FAQ-20-C6942F?style=flat-square)](./docs/06_新员工常见问题FAQ.md)
+[![Prompt](https://img.shields.io/badge/Prompt-Ready-2F6FED?style=flat-square)](./prompts/assistant_prompt.md)
+[![Status](https://img.shields.io/badge/Status-Portfolio_Ready-111827?style=flat-square)](./09_项目演示讲解稿.md)
+
 ![Project Cover](./assets/project-cover.svg)
 
 > 一个面向零售商品管理场景的 AI 知识库 / ERP 操作 SOP 助手示例项目。
 
 本项目基于通用零售业务流程整理 SOP 文档与 FAQ，用于模拟企业内部新人在商品资料维护、库存异常排查、调拨处理、销售数据核对等场景下，通过自然语言查询处理步骤、注意事项和风险提醒。
+
+## 快速入口
+
+- [在线演示](https://mrguam.github.io/retail-ai-sop-assistant/)
+- [静态演示页源码](./index.html)
+- [SOP 文档目录](./docs)
+- [知识库 Prompt](./prompts/assistant_prompt.md)
+- [测试问题集](./08_知识库测试问题集.md)
+- [项目讲解稿](./09_项目演示讲解稿.md)
+
+## 项目预览
+
+![Demo Homepage Screenshot](./assets/demo-homepage.png)
 
 ## 项目简介
 
@@ -35,6 +54,14 @@
 - 基于 Prompt 的结构化回答输出
 - 静态演示页展示项目结构和回答示例
 
+## 这个项目适合展示什么能力
+
+- 将业务流程拆解成可执行、可复用的 SOP
+- 将零散经验整理成知识库文档与 FAQ
+- 使用 Dify / Coze / 其他平台搭建 AI 问答助手
+- 设计结构化 Prompt，约束回答格式和风险提醒
+- 输出测试问题集、演示页和讲解稿，形成完整作品集链路
+
 ## 仓库结构
 
 ```text
@@ -59,6 +86,19 @@ retail-ai-sop-assistant
 └── 09_项目演示讲解稿.md
 ```
 
+## 你能在仓库里直接看到什么
+
+- `docs/`
+  6 份核心知识库文档，适合直接上传到 Dify / Coze。
+- `prompts/assistant_prompt.md`
+  一个更轻量、可直接复制到系统提示词里的版本。
+- `index.html`
+  一个无需后端的静态演示页，适合做 GitHub Pages 在线展示。
+- `08_知识库测试问题集.md`
+  上线前验收和录屏演示时可以直接拿来问。
+- `09_项目演示讲解稿.md`
+  适合面试介绍和作品集讲解。
+
 ## 核心资料
 
 - [商品资料维护 SOP](./docs/01_商品资料维护SOP.md)
@@ -79,7 +119,13 @@ retail-ai-sop-assistant
 - [09_项目演示讲解稿.md](./09_项目演示讲解稿.md)
   适合做面试介绍、录屏配音和项目讲解。
 
-## 本地演示
+## 在线演示与本地演示
+
+在线访问：
+
+```text
+https://mrguam.github.io/retail-ai-sop-assistant/
+```
 
 项目内置了一个静态展示页 [index.html](./index.html)，可直接本地打开。
 
@@ -93,8 +139,6 @@ open index.html
 - 已整理的文档范围
 - AI 助手固定回答格式
 - 典型问题的回答示例
-
-如果后续发布到 GitHub Pages，也可以直接使用当前静态页作为首页。
 
 ## 推荐回答格式
 
@@ -134,6 +178,13 @@ AI 助手回答时建议固定输出以下结构：
 4. 设置回复必须固定输出 5 个模块。
 5. 使用 [08_知识库测试问题集.md](./08_知识库测试问题集.md) 做上线前验收。
 
+## 推荐回答风格
+
+- 优先给出执行顺序，而不是泛泛解释
+- 先提醒需要确认哪些信息，再给处理动作
+- 对库存、金额、批量修改、删除、作废等高风险动作，明确提醒先确认权限或负责人
+- 信息不足时，不硬答，先要求补充门店、SKU、时间范围、单据状态等背景
+
 ## 项目价值
 
 通过该项目，可以练习以下能力：
@@ -161,6 +212,12 @@ AI 助手回答时建议固定输出以下结构：
 - 设计知识库问答 Prompt，约束 AI 固定输出“问题判断、处理步骤、需要确认的信息、风险提醒、建议后续动作”。
 - 配套测试问题集、演示页和项目讲解稿，用于 Dify / Coze 知识库 Demo、作品集展示和面试讲解。
 ```
+
+## GitHub 展示建议
+
+- 仓库主页优先看 README、预览图和在线演示入口
+- 如果用于简历投递，建议同时附上 GitHub Pages 地址
+- 如果后面接入了真实 Dify / Coze Bot，可以把平台截图补到 `assets/` 中继续增强展示效果
 
 ## 后续可扩展方向
 
